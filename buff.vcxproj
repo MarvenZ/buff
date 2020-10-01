@@ -144,7 +144,7 @@
     <ClInclude Include="actorData.h" />
     <ClInclude Include="baseBuff.h" />
     <ClInclude Include="boostBuff.h" />
-    <ClInclude Include="ticBuff.h" />
+    <ClInclude Include="tickBuff.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="actor.cpp" />
@@ -153,7 +153,6 @@
     <ClCompile Include="boostBuff.cpp" />
     <ClCompile Include="entry.cpp" />
     <ClCompile Include="ticBuff.cpp" />
-    <ClCompile Include="tick.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

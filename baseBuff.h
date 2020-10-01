@@ -11,6 +11,7 @@ enum buffType{ Beneficial, Harmful, Neutral };
 
 class BaseBuff
 {
+
 public:
 
     Actor* m_bindActor;

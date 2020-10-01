@@ -17,7 +17,7 @@ BoostBuff::BoostBuff(int buffIndex, Actor * bindActor)
 
         buffType = Harmful;
 
-        bindActor->
+       // bindActor->
 
     }
 

@@ -24,13 +24,13 @@
     <ClInclude Include="actorData.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="ticBuff.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="boostBuff.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="ActorController.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tickBuff.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -51,9 +51,6 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="ActorController.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="tick.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

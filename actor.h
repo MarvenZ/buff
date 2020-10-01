@@ -4,7 +4,7 @@
 #include<vector>
 
 #include"boostBuff.h"
-#include"ticBuff.h"
+#include"tickBuff.h"
 
 
 class Actor
@@ -26,13 +26,15 @@ class Actor
     s_posit m_manaGetBuff;
     s_posit m_ExpGetBuff;
 
-    std::vector< TicBuff*> ticBuff;
+    std::vector< TickBuff*> tickBuff;
     std::vector< BoostBuff*>  boostBuff;
 
     Actor(std::string Name,posit ID);
     ~Actor();
 
     bool addBuff();
+
+    bool tick();
 
     friend class BoostBuff;
     friend class TicBuff;   

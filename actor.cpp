@@ -20,3 +20,18 @@ Actor::~Actor()
 {
 }
 
+bool Actor::tick()
+{
+    for (auto buff : tickBuff)
+    {
+        buff->tick();
+    }
+
+    for (auto buff : boostBuff)
+    {
+        buff->tick();
+    }
+
+    return true;
+}
+

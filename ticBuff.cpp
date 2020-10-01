@@ -1,6 +1,6 @@
-#include "ticBuff.h"
+#include "tickBuff.h"
 
-TicBuff::TicBuff(int buffIndex , Actor* bindActor)
+TickBuff::TickBuff(int buffIndex , Actor* bindActor)
 {
     if (buffIndex == 101)
     {
@@ -20,16 +20,16 @@ TicBuff::TicBuff(int buffIndex , Actor* bindActor)
 
         buffType = Beneficial;
 
-        effectTarget = *(m_bindActor->m_health);
+        effectTarget = m_bindActor->m_health;
 
     }
 }
 
-TicBuff::~TicBuff()
+TickBuff::~TickBuff()
 {
 }
 
-bool TicBuff::tick()
+bool TickBuff::tick()
 {
     if (m_timer <= m_duaration)
     {
@@ -37,7 +37,7 @@ bool TicBuff::tick()
     }
     else
     {
-        this->~TicBuff();
+        this->~TickBuff();
     }
 
     if (m_timer % m_tickGap == 0)
